@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "skipYoutubeAd",
+  "description": "Ne plus se tapper les pubs car ça saoul",
+  "version": "1.0.1",
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["skipAds.js", "urlChangeDetection.js"]
+    }
+  ]
+}
