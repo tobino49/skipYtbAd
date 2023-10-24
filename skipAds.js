@@ -32,9 +32,11 @@ async function skipAd(video) {
   console.log('ad skiped');
 }
 
-window.addEventListener('adAppeared', () => {
+function detectContainer() {
   const container = document.querySelector('#container.style-scope.ytd-player');
   const video = container.querySelector('video');
 
   skipAd(video);
-});
+}
+
+window.addEventListener('adAppeared', detectContainer);

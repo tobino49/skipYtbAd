@@ -1,14 +1,12 @@
 {
   "manifest_version": 3,
-  "name": "skipYoutubeAd",
-  "description": "Ne plus se tapper les pubs car ça saoul",
+  "name": "1SecAds",
+  "description": "AdBlock fonctionne plus, voici une petite alternative pour passer les pubs youtube",
   "version": "1.0.1",
+  "author": "tobino49",
 
-  "action": {
-    "default_popup": "popup.html"
-  },
-  "background": {
-    "service_worker": "background.js"
+   "icons": {
+    "128": "logo128.png"
   },
   "content_scripts": [
     {
