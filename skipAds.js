@@ -26,7 +26,10 @@ function waitYtbAdSkipButton() {
 async function skipAd(video) {
   video.currentTime = video.duration;
   const adSkipButton = await waitYtbAdSkipButton();
-  adSkipButton.click();
+  if(adSkipButton) {
+    adSkipButton.click();
+  }
+  console.log('ad skiped');
 }
 
 window.addEventListener('adAppeared', () => {
