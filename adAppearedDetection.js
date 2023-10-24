@@ -13,4 +13,4 @@ function checkAdAppeared() {
   }
 }
 
-setInterval(checkAdAppeared, 1000);
+setInterval(checkAdAppeared, 100);
